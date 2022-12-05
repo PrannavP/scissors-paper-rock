@@ -1,4 +1,5 @@
 import random
+from playsound import playsound
 
 # take user's choice
 userchoice = input("Enter your choice: ")
@@ -46,18 +47,24 @@ def compare_choices():
     # User win case
     elif computer_choice == 0 and userchoice == "paper":
         print("User won!")
+        playsound('sounds/victory.mp3')
     elif computer_choice == 1 and userchoice == "scissor":
         print("User won!")
+        playsound('sounds/victory.mp3')
     elif computer_choice == 2 and userchoice == "rock":
         print("User won!")
+        playsound('sounds/victory.mp3')
     
     # Computer win case
     elif computer_choice == 0 and userchoice == "scissor":
         print("Computer won!")
+        playsound('sounds/lost.mp3')
     elif computer_choice == 1 and userchoice == "rock":
         print("Computer won!")
+        playsound('sounds/lost.mp3')
     elif compare_choices == 2 and userchoice == "paper":
         print("Computer won!")
+        playsound('sounds/lost.mp3')
     else:
         print("Error occured!")
 
