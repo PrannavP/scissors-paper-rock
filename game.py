@@ -1,5 +1,4 @@
 import random
-from playsound import playsound
 
 userScore = 0
 
