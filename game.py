@@ -1,7 +1,7 @@
 import random
-from playsound import playsound
 
 userScore = 0
+computerScore = 0
 
 # ask rounds
 gameRounds = int(input("How many rounds do you want to play?: "))
@@ -77,17 +77,17 @@ def compare_choices():
     # Computer win case
     elif computer_choice == 0 and userchoice == "scissor":
         print("Computer won!")
-        # computerScore += 1
+        computerScore += 1
         print(f"Computer Score: { computerScore }")
 
     elif computer_choice == 1 and userchoice == "rock":
         print("Computer won!")
-        # computerScore += 1
+        computerScore += 1
         print(f"Computer Score: { computerScore }")
 
     elif computer_choice == 2 and userchoice == "paper":
         print("Computer won!")
-        # computerScore += 1
+        computerScore += 1
         print(f"Computer Score: { computerScore }")
 
     else:
